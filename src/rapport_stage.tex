@@ -2,7 +2,7 @@
 
 
 \begin{document}
-	\title{Yet Another Network Simulator\\Développement d'un simulateur de réseaux}
+	\title{Yet Another Network Simulator\\Développement d'un outil de simulation de réseaux}
 	\date{Toulouse 2018-18-09}
 	\author{Sylvain Daste\\Avec l'aide de Mr. Chaput Enseignant Chercheur à l'Irit\\ENSEEIHT\\IRIT}
 	\maketitle
@@ -15,42 +15,66 @@
 	
 	
 	\section{Remerciement}
-\paragraph{}
-Je tiens à remercier mon maitre de stage, MrEmmanuel Chaput, pour son accueil, le temps passé ensemble et toute l'aide qu'il m'a apporté. Grâce aussi à sa confiance j'ai pu m'accomplir totalement dans mes missions. Il fut d'une aide précieuse dans les moments les plus délicats. Je remercie également l'Irit de m'avoir chaleuresement acceuilli au sein de leur équipe.
+	\paragraph{}
+	Je tiens à remercier mon maitre de stage, MrEmmanuel Chaput, pour son accueil, le temps passé ensemble et toute l'aide qu'il m'a apporté. Grâce aussi à sa confiance j'ai pu m'accomplir totalement dans mes missions. Il fut d'une aide précieuse dans les moments les plus délicats. Je remercie également l'Irit de m'avoir chaleuresement acceuilli au sein de leur équipe.
 	\newpage
-	
-	
-	
-	
-	
-	\section{Introduction}
-	\subsection{Objectifs du stage}
-\paragraph{}
-L'objectif de ce stage était de fournir un logiciel simple capable de simuler/émuler des réseaux internet. Mr Chaput avais déjà fournit un socle de ce logiciel avec les fonctionnalités les plus basiques. Mes missions étaient de :
-		\begin{itemize}
-			\item fournir une documention des principales fonctionnalités à la fois d'un point de vue utilisateur et développeur.
-			\item développer de nouvelles fonctionnalités permettant au programme d'étendre ses capacités d'émulation
-			\item permettre l'émulation du réseaux grâce à différentes technologies notamment Docker.
-			\item développer Yane de façon à faciliter l'intégration de nouvelles fonctionnalités.
-			\item essayer plusieurs interface d'intéraction avec Yane (tmux, terminator,... )
-		\end{itemize}
-Le dévoloppement et le suivit de Yane est accessible sur Github : https://github.com/Manu-31/yane.git
-	\subsection{Objectifs de Yane}
-	\paragraph{}
 
-	Yane a pour objectif d'émuler des réseaux complets. Les réseaux simulés par Yane sont des réseaux internet. Par conséquent Yane se base uniquement sur IP. On doit être en mesure de simuler jusqu'à 20 machines environ. Yane doit également pouvoir simuler différent type de machines. Par exemple émuler un serveur DNS ou des routeurs. Une fois le réseau émulé l'utilisateur doit pouvoir intéragir avec celui-ci. Les intéractions provoqueront l'envoie de paquets entre les différentes machines. 
+
+	\section{Introduction}
+
+
+	\subsection{Objectifs de Yane}
 	
 	\paragraph{}
-	Mr. Chaput avait déjà développé une base très simple de Yane. Il avait également fournit un ensemble d'exemples d'utilisation de Yane. Nous allons passer en revu les principaux exemples car ils permettent de démontrer les capacités que Yane devra acquérir.
+	Yet Another Network Simulator a pour objectif d'émuler des réseaux complets. Les réseaux simulés par Yane sont des réseaux internet. Par conséquent Yane se base uniquement sur les protocoles TCP/IP (IPv4 seulement). Il doit être en mesure d'émuler ou de virtualiser jusqu'à 20 stations. Les stations peuvent être de nature différentes. Par exemple émuler un serveur DNS, des routeurs, des bases de données. Ces différents besoins imposent à Yane de pouvoir émuler la plusieurs OS ou de virtualiser différentes applications. 
+	
+	\paragraph{}
+	Le choix fait par Mr. Chaput était de rendre Yane modulaire afin de pouvoir intégrer différentes techniques d'émulation dans le futur.
+
+	\paragraph{}
+	Une fois le réseau émulé, l'utilisateur doit pouvoir intéragir avec celui-ci. Les intéractions provoqueront l'envoie de paquets entre les différentes stations. L'utilisateur aura aussi la possibilité d'écouter le réseau.
+	
+	\paragraph{}
+	Mr. Chaput avait déjà développé une base simple de Yane. Il avait fournit un ensemble d'exemples d'utilisation de Yane. Nous passerons en revu les principaux exemples car ils permettent de comprendre le fonctionnement de Yane.
+	
+	
+	\subsection{Objectifs du stage}
+
+	\paragraph{}
+	L'objectif de ce stage était d'améliorer Yane, un logiciel simple capable de simuler/émuler des réseaux internet. Mr Chaput avais déjà fournit un socle avec les fonctionnalités les plus basiques. Mes missions étaient de :
+			\begin{itemize}
+				\item fournir une documention des fonctionnalités à la fois d'un point de vue utilisateur que développeur.
+				\item développer de nouvelles techniques d'émulation, Docker notamment.
+				\item développer Yane de façon à faciliter l'intégration de nouvelles fonctionnalités.
+				\item essayer plusieurs interfaces d'intéraction avec Yane (tmux, terminator,...)
+			\end{itemize}
+
+	\paragraph{}
+	Le dévoloppement de Yane est accessible sur Github :
+	\newline https://github.com/Manu-31/yane.git ce qui permet un suivit agile.
+	\paragraph{Annonce du plan}
 
 	\newpage	
 
 
 
-	\section{Yet Another Network Emulator}
-		\subsection{Fonctionnement de Yane}
-		\subsection{Objectifs de Yane}
-		\subsection{Technologies}
+	\section{Yane | Utilisation}
+		\subsection{}
+		\subsection{}
+		\subsection{}
+		\newpage
+	\section{Yane | Fonctionnement et architecture}
+		\subsection{Modularité}
+		\subsection{YAML}
+		\subsection{Tmux}
+		\newpage
+	\section{Docker}
+		\subsection{Docker | Bases}
+		\subsection{Docker et Yane}
+		\subsection{}
+		\newpage
+	\section{L'intéraction avec Yane}
+		\subsection{tmux}
 		\newpage
 	\section{Conclusion}
 \end{document}
